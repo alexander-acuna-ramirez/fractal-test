@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="flex justify-content-center py-6 w-full">
-            <div class="md:w-6 sm:w-8">
+            <div class="md:w-6 sm:w-8 xs:w-10">
                 <InputGroup class="w-full">
                     <Button label="Filtros" style="border-radius: 3rem 0 0 3rem" class="sm:w-4 md:w-3" @click="toggle"
                         icon="pi pi-filter" />

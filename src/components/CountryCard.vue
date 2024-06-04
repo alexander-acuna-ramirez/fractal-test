@@ -25,42 +25,7 @@
             :urlImage="url" 
             />
         </Sidebar>
-            <!--
-        <Sidebar v-model:visible="visibleRightBar" header="País" position="right">
-            <img :src="imageUrl" class="w-full" style="border-radius: 6px; height: 170px;" />
-            <div class="flex flex-row mt-2 align-items-center">
-                <img v-if="!flagError" :src="`https://flagsapi.com/${country.code}/flat/64.png`" alt="Flag of {{ country.name }}"
-                    width="100px" height="auto" @error="handleFlagError"/>
-                <img v-else :src="this.noFlag" alt="Flag of {{ country.name }}"
-                    width="100px" height="64px" />
-                <div class="flex flex-column justify-content-center ml-5">
-                    <h4 class="text-2xl my-0">{{ country.name }}</h4>
-                    <span class="text-lg">{{ country.continent.name }}</span>
-                </div>
-            </div>
-            <div>
-                <div class="my-2">
-                    <span class="text-primary text-xl font-bold">Capital: </span>
-                    <span class="text-xl">{{ countryData.name }}</span>
-                </div>
-                <div class="my-2">
-                    <span class="text-primary text-xl font-bold">Language: </span>
-                    <span class="text-xl">{{ countryData.languages[0].name }}, {{ countryData.languages[0].native
-                        }}</span>
-                </div>
-                <div class="my-2">
-                    <span class="text-primary text-xl font-bold">Currency: </span>
-                    {{ countryData.currency }}
-                </div>
-                <div class="my-2">
-                    <span class="text-primary text-xl font-bold">Region</span>
-                    
-                    <Listbox :options="countryData.state" optionLabel="name" class="w-full mt-2" emptyMessage="No regions" />
-
-                </div>
-            </div>
-        </Sidebar>
-        -->
+          
     </div>
 </template>
 

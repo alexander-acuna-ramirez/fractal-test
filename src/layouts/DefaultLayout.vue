@@ -107,7 +107,6 @@ li {
 
 @media (max-width: 768px) {
   .sidebar {
-    width: 100%;
     transform: translateX(-100%);
     position: fixed;
     z-index: 1;
