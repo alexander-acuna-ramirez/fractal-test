@@ -3,7 +3,7 @@
         <div class="flex justify-content-center py-6 w-full">
             <div class="md:w-6 sm:w-8 xs:w-10">
                 <InputGroup class="w-full">
-                    <Button label="Filtros" style="border-radius: 3rem 0 0 3rem" class="sm:w-4 md:w-3" @click="toggle"
+                    <Button  style="border-radius: 3rem 0 0 3rem" class="sm:w-4 md:w-3" @click="toggle"
                         icon="pi pi-filter" />
 
                     <InputText style="border-radius: 0 3rem 3rem 0" class="px-7 py-3 sm:w-8 md:w-9"
@@ -19,6 +19,7 @@
 
                         <template #item="{ item, props }">
                             <a class="flex" v-bind="props.action" @click="filter.continent = item.code" :class="{'text-primary': item.code == filter.continent }">
+                                <img :src="`/continents/${item.code}.png`" height="20px" width="auto"/>
                                 <span class="ml-2">{{ item.name }}</span>
                             </a>
                         </template>
