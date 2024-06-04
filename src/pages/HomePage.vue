@@ -3,10 +3,10 @@
         <div class="flex justify-content-center py-6 w-full">
             <div class="md:w-6 sm:w-8 xs:w-10">
                 <InputGroup class="w-full">
-                    <Button  style="border-radius: 3rem 0 0 3rem" class="sm:w-4 md:w-3" @click="toggle"
+                    <Button label="Filtros"  style="border-radius: 3rem 0 0 3rem" class="xs:w-4 sm:w-3 md:w-2" @click="toggle"
                         icon="pi pi-filter" />
 
-                    <InputText style="border-radius: 0 3rem 3rem 0" class="px-7 py-3 sm:w-8 md:w-9"
+                    <InputText style="border-radius: 0 3rem 3rem 0" class="px-2 py-3 xs:w-8 sm:w-9 md:w-10"
                         v-model="this.filter.search" placeholder="Escribe el país que deseas ver" />
 
                     <Menu ref="menu" id="overlay_menu" :model="continentsOptions" :popup="true">
